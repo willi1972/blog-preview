@@ -1,0 +1,113 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+}
+
+.container-main {
+  width: 375px;
+  height: ;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-main {
+  width: 327px;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px #000000;
+  background-color: var(--white);
+}
+
+.blog-img img {
+  width: 100%;
+  padding: 24px;
+  border-radius: 30px;
+}
+
+.content {
+  width: 100%;
+  padding: 0 24px 24px 24px;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 900;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.blog-date {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.blog-text h1 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 150%;
+}
+
+.blog-text p {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+.blog-author {
+  display: flex;
+  align-items: center;
+  padding: 0 24px 24px 24px;
+}
+
+.blog-author img {
+  width: 32px;
+}
+
+.blog-author p {
+  padding-left: 12px;
+  font-weight: 900;
+}
+
+/* Attribution Section */
+
+.attribution {
+  margin: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 700px) {
+  .container-main {
+    max-width: 1440px;
+  }
+}
